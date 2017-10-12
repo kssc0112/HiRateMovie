@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HiRateMovie</string>
+    <string name="by_rating">By Rating</string>
+    <string name="by_popularity">By Popularity</string>
+    <string name="favorite">Favorite</string>
+    <string name="trailer">trailer</string>
+    <string name="view_full_review">(View Full Review)</string>
+    <string name="no_movie_available">No Movie Available</string>
+    <string name="mark_favorite">Mark As Favorite</string>
+    <string name="remove_favorite">Marked As Favorite</string>
+
+
+</resources>

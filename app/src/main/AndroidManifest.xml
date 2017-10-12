@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kssc0112.hiratemovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/hi_rate_movie_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/hi_rate_movie_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.kssc0112.hiratemovie.MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kssc0112.hiratemovie.DetailScreenActivity"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"/>
+            </intent-filter>
+
+        </activity>
+
+        <provider
+            android:name="com.kssc0112.hiratemovie.data.FavoriteMovieContentProvider"
+            android:authorities="com.kssc0112.hiratemovie.data"
+            android:exported="false"/>
+    </application>
+
+</manifest>
